@@ -1,6 +1,19 @@
 * {
 	font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+	font-family: 
 	box-sizing: border-box;
+}
+
+#courses {
+	text-decoration: none;
+	color: white;
+}
+
+.sticky {
+	position: sticky;
+	position: -webkit-sticky;
+	top: 0;
+	z-index: 1;
 }
 
 html {
@@ -40,40 +53,47 @@ p {
 
 div.chat {
 	position: fixed;
- 	bottom: 7%;
- 	right: 2.5%;
+ 	bottom: 4%;
+ 	right: 2.7%;
+ 	z-index: 1;
 }
 
 .chat img {
-	width: 40px;
- 	height: 40px;
+	width: 52px;
+ 	height: 52px;
+ 	border-radius: 0.32rem;
 }
+
 
 .title h1 {
 	background-image: url('images/background-image.svg');
 	margin: 0;
-	padding: 3.2em 0;
+	padding: 2em 0;
 }
 
 #bcs {
 	text-align: left;
 	font-size: 0.8em;
-	margin-left: 10%;
+	margin-left: 0.7em;
+	
 }
+
 .nav {
 	display: flex;
 	justify-content: space-between;
 	background: black;
 	color: white;
 	padding: 1% 10%;
-	position fixed; /* makes navbar smaller and flex not working*/
 	top: 0;
+	position: sticky;
+	position: -webkit-sticky;
+	z-index: 1;
 }
-div.nav {
-	position: -webkit-sticky; /* Safari */
-	position: sticky; /* not working */
+/*div.nav {
+	position: -webkit-sticky; /* Safari 
+	position: sticky; /* not working 
 	top:0;
-}
+}*/
 
 .desktop {
 	display: none;
@@ -83,8 +103,9 @@ div.nav {
 	padding: 0 1em;
 }
 .small img {
-	width: 5%;
-	height: 5%;
+	width: 7%;
+	height: 7%;
+	margin: 1em 0;
 }
 
 .grid-talk {
@@ -117,20 +138,24 @@ p.social-media a {
 .video {
 	max-width: 100%;
 	height: 100%;
-	/*height: 0;
-	position: relative; messes up completely
+	position: relative;
+	background-color: grey;
+	height: 0;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	position: relative; /*messes up completely*/
 	overflow: hidden;
-	/*box-shadow: -3px 3px black;*/
+	box-shadow: -3px 3px black;
 }
 
 .video iframe {
-	/*position: absolute; meses up completely
-	top 0;
-	left 0;*/
+	position: absolute; /*meses up completely*/
+	top: 0;
+	left: 0;
 	width: 100%;  /*without width/height, video not resizing, with them resizing weirdly!!*/
 	height: 100%;
-	box-shadow: -3px 3px black;
-	overflow: hidden;
+	/*box-shadow: -3px 3px black;
+	overflow: hidden;*/
 }
 
 .opportunities,
@@ -180,11 +205,28 @@ h4 {
 .grid-bootcamp p {
 	text-decoration: underline; 
 }
+
 .partners img {
 	width: 100%;
 	height: auto;
+
 }
 
+.partners-img img {
+	width: 10%;
+	margin-right:2%;
+	vertical-align: middle;
+	filter: grayscale(100%);
+}
+img {
+	margin: 0 0 1em;
+}
+#atrapalo {
+	background-color: black;
+}
+#coursicab {
+	background-color: lightgrey;
+}
 footer {
 	padding: 2em 10%;
 	margin-bottom: 0;
@@ -211,8 +253,10 @@ footer p {
 	background: black;
 	color: white;
 	padding: 1% 10%;
-	position fixed; /* makes navbar smaller and flex not working, sticky not working at all*/
+	position: sticky;
+	position: -webkit-sticky; /* makes navbar smaller and flex not working, sticky not working at all*/
 	top: 0;
+	z-index: 1;
 	}
 
 	.all,
@@ -220,9 +264,6 @@ footer p {
 		padding: 2em 6.25em;
 	}
 
-	#bcs {
-		font-size: 1.3em;
-	}
 	.align {
 		border-bottom: 1px solid grey;
 		grid-column: 1/3;
@@ -241,5 +282,14 @@ footer p {
 	}
 	.grid-footer {
 		grid-template-columns: 1fr 1fr 1fr;
+	}
+	.title h1 {
+		margin: 0;
+		padding: 3.2em 0;
+	}
+	#bcs {
+		text-align: left;
+		font-size: 0.8em;
+		margin-left: 3em;
 	}
 }

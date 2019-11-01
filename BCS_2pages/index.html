@@ -9,23 +9,25 @@
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>
-		<div class='chat'>
-		<img src="images/chat-icon.png" alt="chat">
-		</div>
-		<header>
-			<div class='title'>
+
+<!--************ HEADER + NAVBAR *************-->
+
+		<header class='title'>
 			<h1><span id='bcs'>Barcelona Code School</span></h1> 
-			</div>
-			<div class='nav desktop'>
-				<div>Calendar</div>
-				<div>Courses</div>
-				<div>Contact us</div>
-				<div>About us</div>
-			</div>
-			<div class='nav small'>
+		</header>
+		<nabvar>
+			<div class='nav small sticky'>
 				<img src='images/menu_mobile.png' alt='menu'>
 			</div>
-		</header>
+			<div class='nav desktop sticky'>
+				<span>Calendar</span>
+				<span><a id='courses' href="courses.html">Courses</a></span>
+				<span>Contact us</span>
+				<span>About us</span>
+			</div>
+		</nabvar>
+<!--************ SECTION 1 *************-->
+
 		<section class='section1'>
 			<div class='grid-talk all'>
 			<div class='info'>
@@ -34,7 +36,6 @@
 				<p class='highlight'><mark>office@barcelonacodeschool.com</mark></p>
 				<p>Muntaner 262, 1-1, 08021, Barcelona, Spain</p>
 				<p class='social-media'>
-					<a href='#'>Whatsapp</a>
 					<a href='#'>Facebook</a>
 					<a href='#'>Twitter</a>
 					<a href='#'>Instagram</a>
@@ -50,6 +51,9 @@
 			</div>
 		</div>
 		</section>	
+
+<!--************ SECTION 2 *************-->
+
 		<section class='opportunities all'>
 			<h2>What do you want to be?</h2>
 			<div class='grid-opportunities'>
@@ -82,6 +86,9 @@
 				</div>
 			</div>
 		</section>
+
+<!--************ SECTION 3 *************-->
+
 		<section class='courses all'>
 			<h2>Choose your way</h2>
 				<div class='grid-bootcamp'>
@@ -131,6 +138,9 @@
 					</div>
 				</div>
 		</section>
+
+<!--************ SECTION 4 *************-->
+
 		<section class='why-us all'>
 			<h2>How are we different?</h2>
 			<div class='grid-we-offer'>
@@ -152,11 +162,56 @@
 				</div>
 		</div>
 		</section>
+
+<!--************ PARTNERS *************-->
+
 		<section class='partners all'>
 			<h2>Partners</h2>
-			<img src='images/Partners_big.JPG' alt='Partners'>
+			<div class='partners-img'>
+				<img src='images/Partners/01_DO.png' alt='Digital Ocean'>
+				<img src='images/Partners/02_sabadell.jpg' alt='Sabadell'>
+				<img src='images/Partners/03_Barcinno.jpg' alt='barcinno'>
+				<img src='images/Partners/04_bitnami.png' alt='bitnami'>
+				<img src='images/Partners/05_openweathermap.png' alt='Open Weather Map'>
+				<img src='images/Partners/06_accenture-technology.png' alt='accenture-technology'>
+				<img src='images/Partners/07_clouding.png' alt='Clouding.io'>
+				<img src='images/Partners/08_innoit.png' alt='Innoit'>
+				<img src='images/Partners/09_futurefunded.png' alt='FutureFunded'>
+				<img src='images/Partners/10_pagePersonnel.png' alt='Page Personnel'>
+				<img src='images/Partners/11_METRO.png' alt='METRO'>
+				<img src='images/Partners/12_thoughtworks.jpg' alt='ThoughtWorks'>
+				<img src='images/Partners/13_sage.png' alt='sage'>
+				<img src='images/Partners/14_marfeel.png' alt='14_marfeel'>
+				<img src='images/Partners/15_GreenPowerMonitor.png' alt='GreenPowerMonitor'>
+				<img src='images/Partners/16_wefitter.png' alt='wefitter'>
+				<img src='images/Partners/17_Genius_Sports.png' alt='Genius Sports'>
+				<img src='images/Partners/18_restb.png' alt='restb.ai'>
+				<img src='images/Partners/19_booklyng.png' alt='Booklyng'>
+				<img src='images/Partners/20_InnoCells.png' alt='InnoCells'>
+				<img src='images/Partners/21_biings.png' alt='Biings'>
+				<img src='images/Partners/22_socialyou.png' alt='social you'>
+				<img src='images/Partners/23_walterspeople.png' alt='WALTERS people'>
+				<img src='images/Partners/24_connectorStartupAccelerator.png' alt='Connector Startup Accelerator'>
+				<img src='images/Partners/25_lesbians-who-tech.png' alt='lesbians WHO tech'>
+				<img src='images/Partners/26_the_lofttown.png' alt='THE LOFTTOWN'>
+				<img src='images/Partners/27_altran.svg' alt='altran'>
+				<img src='images/Partners/28_Huxley.jpg' alt='Huxley'>
+				<img src='images/Partners/29_saltech.png' alt='saltech'>
+				<img id='atrapalo' src='images/Partners/30_atrapalo.png' alt='ATRAPALO'>
+				<img id='coursicab' src='images/Partners/31_coursicab.png' alt='coursicab'>
+				<img src='images/Partners/32_syneidis.png' alt='Syneidis'>
+				<img src='images/Partners/33_unnax.png' alt='unnax'>
+			</div>
 		</section>
-		<footer class='footer'>
+
+<!--******************** CHAT ICON *****************-->
+		<div class='chat'>
+		<img src="images/chat.png" alt="chat">
+		</div>
+
+<!--******************** FOOTER *****************-->
+
+		<footer id='footer'>
 			<div class='grid-footer'>
 				<div>
 					<h2>Our courses</h2>
@@ -192,7 +247,6 @@
 				</div>
 			</div>
 				<p class='copy'>Copyright &copy; 2015-2019 - Barcelona Code School | Upgrade Yourself!</p>
-			 
 		</footer>
 	</body>
 </html>
