@@ -1,4 +1,4 @@
-# Web-Page-Clone1
+# Web-Page-Clone2
 
 Clone of two pages of Barcelona Code School Website: Home and Courses
  
